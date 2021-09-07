@@ -1,0 +1,150 @@
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:white;
+      background-color: black;
+      font-weight:400;
+     
+  }
+  
+  .column {
+    float: left;
+    padding: 10px;
+    height: 97vh; 
+  }
+  
+  .left {
+    width: 55%;
+   
+  }
+  
+  .right {
+    width: 45%;
+    padding:40px;
+   
+  }
+  .image-container{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFR8yCMAEoeq2ylqZtK7or-ncwgj_fPM99cRxr73GufyPUCHAj");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.google-logo{
+    width:10px;
+  }
+  .apple{
+    width:17px;
+  }
+  
+  .twitter{
+    width:50px;
+    height:auto;
+    padding-top: 60px;
+  }
+  
+  .login-page{
+    display:flex;
+    flex-direction:column;
+    padding:30px;
+    padding-top:100px;
+    padding-bottom: 150px;
+    
+  }
+  
+  .button{
+    padding:10px;
+    border: 1px solid transparent;
+    border-radius:25px;
+    text-align:center;
+    width:250px;
+    font-weight: 500;
+  }
+  .button:hover{
+      background:black;
+      color:white;
+      border: 1px solid white;
+  }
+  .button-div{
+    padding-bottom:10px
+  }
+  
+  .blue-text{
+    color:#007FFF;
+  }
+  p{
+    width:400px;
+    padding-top:20px;
+    line-height: normal;
+  }
+  
+  #header-font{
+    font-size:50px;
+  }
+  
+  #header2-font{
+    font-size:35px;
+    padding-top:0;
+  }
+  h1{
+      padding-bottom: 20px;
+      padding-top: 20px;
+  }
+  h2{
+      padding-bottom:20px;
+  }
+
+ a{
+     text-decoration: none;
+     color:#007FFF
+ }
+
+ ul{
+     color:white;
+     display: flex;
+     justify-content: center;
+    
+ }
+ li{
+     justify-content: space-between;
+     list-style-type: none;
+     font-size:13px;
+     padding:5px;
+     color:grey;
+     
+ }
+ footer{
+     position: fixed;
+     bottom:0;
+     padding-top:20px;
+     text-align: center;
+     right:0;
+     left:0;
+ }
+ /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    footer{
+        display:none;
+    }
+    .image-container{
+        height:500px;
+    }
+  }
+
+  
+
